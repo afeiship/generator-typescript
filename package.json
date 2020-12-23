@@ -1,7 +1,7 @@
 {
-  "name": "generator-typescript-package",
+  "name": "@jswork/generator-typescript-package",
   "version": "1.0.0",
-  "description": "generator-typescript-package-description",
+  "description": "Yeoman generator from typescript-package.",
   "homepage": "https://github.com/afeiship/generator-typescript-package",
   "author": {
     "name": "afeiship",
