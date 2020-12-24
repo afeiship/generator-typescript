@@ -61,9 +61,10 @@ module.exports = class extends Generator {
   writing() {
     const done = this.async();
     remote("afeiship", "boilerplate-typescript-package", (_, cachePath) => {
-      this.fs.copy(
+      this.fs.copyTpl(
         glob.sync(resolve(cachePath, "{**,.*}")),
-        this.destinationPath()
+        this.destinationPath(),
+        this.props
       );
       done();
     });
