@@ -71,7 +71,13 @@ module.exports = class extends Generator {
   }
 
   end() {
-    const { scope, project_name, description, ProjectName } = this.props;
+    const {
+      scope,
+      project_name,
+      description,
+      ProjectName,
+      projectName
+    } = this.props;
     const files = glob.sync(resolve(this.destinationPath(), "{**,.*}"));
 
     replace.sync({
@@ -80,9 +86,9 @@ module.exports = class extends Generator {
         /boilerplate-typescript-package-description/g,
         /boilerplate-typescript-package/g,
         /boilerplate-scope/g,
-        /GeneratorTypescriptPackage/g
+        /BoilerplateTypescriptPackage/g / boilerplateTypescriptPackage / g
       ],
-      to: [description, project_name, scope, ProjectName]
+      to: [description, project_name, scope, ProjectName, projectName]
     });
   }
 };
