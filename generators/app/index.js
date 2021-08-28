@@ -86,7 +86,8 @@ module.exports = class extends Generator {
         /boilerplate-typescript-package-description/g,
         /boilerplate-typescript-package/g,
         /boilerplate-scope/g,
-        /BoilerplateTypescriptPackage/g / boilerplateTypescriptPackage / g
+        /BoilerplateTypescriptPackage/g,
+        /boilerplateTypescriptPackage/g
       ],
       to: [description, project_name, scope, ProjectName, projectName]
     });
