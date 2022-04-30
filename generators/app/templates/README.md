@@ -13,7 +13,7 @@ npm install @<%= scope %>/<%= project_name %>
 
 ## usage
 ```js
-import <% ctx.camelize(project_name) %> from '@<%= scope %>/<%= project_name %>';
+import <%- ctx.camelize(project_name) %> from '@<%= scope %>/<%= project_name %>';
 
 // usage goes here.
 ```

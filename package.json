@@ -24,13 +24,11 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "@jswork/generator-prompts": "^1.1.4",
-    "@jswork/next-registry-choices": "^1.0.0",
-    "@jswork/yeoman-generator-helper": "^1.0.3",
+    "@jswork/generator-prompts": "^1.1.6",
+    "@jswork/next-registry-choices": "^1.0.1",
+    "@jswork/yeoman-generator-helper": "^1.0.6",
     "chalk": "^3.0.0",
-    "replace-in-file": "^5.0.2",
     "yeoman-generator": "^4.5.0",
-    "yeoman-remote": "^1.0.1",
     "yosay": "^2.0.2"
   },
   "repository": "git@github.com:afeiship/generator-typescript-package.git",
