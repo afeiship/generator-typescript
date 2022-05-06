@@ -19,16 +19,16 @@ import <%- ctx.camelize(project_name) %> from '@<%= scope %>/<%= project_name %>
 ```
 
 ## license
-Code released under [the MIT license](https://github.com/afeiship/boilerplate-typescript-package/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@boilerplate-scope/boilerplate-typescript-package
-[version-url]: https://npmjs.org/package/@boilerplate-scope/boilerplate-typescript-package
+[version-image]: https://img.shields.io/npm/v/<%= scope %>/<%= project_name %>
+[version-url]: https://npmjs.org/package/<%= scope %>/<%= project_name %>
 
-[license-image]: https://img.shields.io/npm/l/@boilerplate-scope/boilerplate-typescript-package
-[license-url]: https://github.com/afeiship/boilerplate-typescript-package/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/<%= scope %>/<%= project_name %>
+[license-url]: https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@boilerplate-scope/boilerplate-typescript-package
-[size-url]: https://github.com/afeiship/boilerplate-typescript-package/blob/master/dist/boilerplate-typescript-package.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/<%= scope %>/<%= project_name %>
+[size-url]: https://github.com/afeiship/<%= project_name %>/blob/master/dist/<%= project_name %>.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@boilerplate-scope/boilerplate-typescript-package
-[download-url]: https://www.npmjs.com/package/@boilerplate-scope/boilerplate-typescript-package
+[download-image]: https://img.shields.io/npm/dm/<%= scope %>/<%= project_name %>
+[download-url]: https://www.npmjs.com/package/<%= scope %>/<%= project_name %>
