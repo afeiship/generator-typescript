@@ -1,8 +1,8 @@
 {
-  "name": "@jswork/generator-typescript-package",
+  "name": "@jswork/generator-typescript",
   "version": "1.0.0",
   "description": "Yeoman generator from typescript-package.",
-  "homepage": "https://github.com/afeiship/generator-typescript-package",
+  "homepage": "https://github.com/afeiship/generator-typescript",
   "author": {
     "name": "afeiship",
     "email": "1290657123@qq.com",
@@ -25,12 +25,11 @@
   },
   "dependencies": {
     "@jswork/generator-prompts": "^1.1.6",
-    "@jswork/next-registry-choices": "^1.0.1",
     "@jswork/yeoman-generator-helper": "^1.0.6",
     "chalk": "^3.0.0",
     "yeoman-generator": "^4.5.0",
     "yosay": "^2.0.2"
   },
-  "repository": "git@github.com:afeiship/generator-typescript-package.git",
+  "repository": "git@github.com:afeiship/generator-typescript.git",
   "license": "MIT"
 }

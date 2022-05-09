@@ -1,2 +1,2 @@
-# generator-typescript-package
+# generator-typescript
 > Yeoman generator from typescript-package.

@@ -39,6 +39,6 @@
     "access": "<%= registry.access %>",
     "registry": "<%= registry.publish %>"
   },
-  "boilerplate": "generator-typescript-package",
+  "boilerplate": "generator-typescript",
   "homepage": "https://js.work"
 }
