@@ -12,6 +12,8 @@ rollup.config.js
 .editorconfig
 .prettierrc
 .prettierignore
+esbuild.config.js
+tsconfig.json
 
 # vscode
 .vscode
