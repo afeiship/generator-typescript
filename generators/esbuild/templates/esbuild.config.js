@@ -18,13 +18,6 @@ const shared = {
   ],
 };
 
-build({
-  ...shared,
-  outfile: 'dist/cjs/index.js',
-});
-
-build({
-  ...shared,
-  outfile: 'dist/esm/index.js',
-  format: 'esm',
-});
+// build cjs + esm
+build({ ...shared, outfile: 'dist/index.cjs.js', });
+build({ ...shared, outfile: 'dist/index.esm.js', format: 'esm', });

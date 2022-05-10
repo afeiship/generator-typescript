@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "description": "<%= description %>",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "postbuild": "tsc --emitDeclarationOnly",
     "build": "node esbuild.config.js"
