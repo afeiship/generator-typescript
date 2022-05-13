@@ -2,6 +2,7 @@
 const { build } = require('esbuild');
 const { nodeExternalsPlugin } = require('esbuild-node-externals');
 const { clean } = require('esbuild-plugin-clean');
+const { replace } = require('esbuild-plugin-replace');
 
 const shared = {
   entryPoints: ['src/index.ts'],
@@ -15,6 +16,9 @@ const shared = {
       patterns: ['./dist/*'],
     }),
     nodeExternalsPlugin(),
+    replace({
+      'export default ': 'export = ',
+    }),
   ],
 };
 
