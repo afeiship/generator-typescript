@@ -1,6 +1,5 @@
 {
   "name": "@<%= scope %>/<%= project_name %>",
-  "private": true,
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "dist/index.cjs.js",
