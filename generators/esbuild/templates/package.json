@@ -22,6 +22,7 @@
     "esbuild-plugin-clean": "^0.9.0",
     "esbuild-node-externals": "^1.4.1",
     "prettier": "^2.6.2",
+    "release-it": "^15.0.0",
     "typescript": "^4.6.4"
   }
 }
