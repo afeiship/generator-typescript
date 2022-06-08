@@ -3,6 +3,10 @@ const { build } = require('esbuild');
 const { nodeExternalsPlugin } = require('esbuild-node-externals');
 const { clean } = require('esbuild-plugin-clean');
 const { replace } = require('esbuild-plugin-replace');
+const bfs = require('@jswork/banner-defaults');
+const pkg = require(path.join(process.cwd(), './package.json'));
+
+require('@jswork/next-nice-comments');
 
 const shared = {
   entryPoints: ['src/index.ts'],
@@ -11,6 +15,9 @@ const shared = {
   platform: 'node',
   sourcemap: true,
   target: 'node14',
+  banner: {
+    js: nx.niceComments(bfs(pkg), 'js'),
+  },
   plugins: [
     clean({
       patterns: ['./dist/*'],
@@ -18,6 +25,7 @@ const shared = {
     nodeExternalsPlugin(),
     replace({
       'export default ': 'export = ',
+      '__VERSION__': pkg.version,
     }),
   ],
 };
