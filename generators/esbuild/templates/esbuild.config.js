@@ -3,6 +3,7 @@ const { build } = require('esbuild');
 const { nodeExternalsPlugin } = require('esbuild-node-externals');
 const { clean } = require('esbuild-plugin-clean');
 const { replace } = require('esbuild-plugin-replace');
+const path = require('path');
 const bfs = require('@jswork/banner-defaults');
 const pkg = require(path.join(process.cwd(), './package.json'));
 
