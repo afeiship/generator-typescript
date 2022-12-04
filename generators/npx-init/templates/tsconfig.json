@@ -1,13 +1,16 @@
 {
-  "extends": "@tsconfig/node12/tsconfig.json",
   "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "declaration": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "removeComments": true
+    "pretty": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false
   },
   "include": [
     "src/index.ts"
