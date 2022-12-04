@@ -12,4 +12,7 @@ yo @jswork/typescript:appx
 
 # typescript for esbuild
 yo @jswork/typescript:esbuild
+
+# typescript for npx-init
+yo @jswork/typescript:npx-init
 ```
