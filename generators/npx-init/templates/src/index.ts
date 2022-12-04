@@ -11,3 +11,4 @@ files.forEach((file) => {
 });
 
 console.log('files copyed!');
+process.exit(0);
