@@ -10,6 +10,9 @@ yo @jswork/typescript
 # typescript app
 yo @jswork/typescript:appx
 
+# typescript app based on swc
+yo @jswork/typescript:app_swc
+
 # typescript for esbuild
 yo @jswork/typescript:esbuild
 
