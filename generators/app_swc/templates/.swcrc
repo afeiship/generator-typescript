@@ -8,8 +8,8 @@
     },
     "target": "es2020",
     "paths": {
-      "@functions/*": [
-        "./src/functions/*"
+      "@/*": [
+        "./src/*"
       ]
     },
     "baseUrl": "."
