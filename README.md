@@ -8,7 +8,7 @@
 yo @jswork/typescript
 
 # typescript app
-yo @jswork/typescript:appx
+yo @jswork/typescript:app_tsnode
 
 # typescript app based on swc
 yo @jswork/typescript:app_swc
