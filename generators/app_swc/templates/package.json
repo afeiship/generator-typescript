@@ -27,11 +27,11 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@jswork/next": "^1.0.9",
+    "@jswork/next": "^1.1.5",
     "@jswork/next-dt-log": "^1.1.3",
-    "@jswork/next-require": "^1.0.3",
-    "@jswork/next-sets": "^1.0.1",
-    "@jswork/next-yaml-configuration": "^1.0.1",
+    "@jswork/next-require": "^1.0.4",
+    "@jswork/next-sets": "^1.0.3",
+    "@jswork/next-yaml-configuration": "^1.0.3",
     "args-parser": "^1.3.0"
   }
 }
