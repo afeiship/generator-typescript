@@ -1,6 +1,7 @@
 {
   "name": "swc-app",
   "version": "1.0.0",
+  "private": true,
   "description": "<%= description %>",
   "homepage": "https://js.work",
   "scripts": {
