@@ -5,6 +5,7 @@
   "description": "<%= description %>",
   "homepage": "https://js.work",
   "scripts": {
+    "task:init":"cp config.sample.yml config.yml",
     "dev": "concurrently \"yarn watch-compile\" \"yarn watch-dev\"",
     "watch-compile": "swc src -w --out-dir dist",
     "watch-dev": "nodemon --watch \"dist/**/*\" -e js ./dist/main.js",
