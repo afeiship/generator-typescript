@@ -1,18 +1,10 @@
 {
   "jsc": {
+    "target": "es5",
     "parser": {
       "syntax": "typescript",
-      "tsx": true
-    },
-    "transform": {
-      "legacyDecorator": true,
-      "decoratorMetadata": true
+      "jsx": true
     }
   },
-  "output": {
-    "format": "cjs",
-    "minify": true,
-    "outdir": "dist",
-    "sourcemap": true
-  }
+  "minify": true
 }

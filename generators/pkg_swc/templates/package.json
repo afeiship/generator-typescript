@@ -6,7 +6,7 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "swc src --out-dir dist --source-maps --config-file .swcrc",
+    "build": "swc src -d dist --source-maps",
     "clean": "rm -rf dist",
     "prepare": "npm run clean && npm run build",
     "test": "jest",
