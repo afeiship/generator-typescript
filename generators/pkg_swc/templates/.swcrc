@@ -1,40 +1,18 @@
-// .swcrc
 {
   "jsc": {
     "parser": {
       "syntax": "typescript",
-      "tsx": true,
-      "decorators": true,
-      "dynamicImport": true
+      "tsx": true
     },
     "transform": {
-      "react": {
-        "runtime": "automatic",
-        "development": false,
-        "useBuiltins": true
-      },
-      "decoratorsLegacy": true,
-      "classProperties": true,
-      "exportDefaultFrom": true,
-      "exportNamespaceFrom": true,
-      "nullishCoalescingOperator": true,
-      "optionalChaining": true,
-      "numericSeparator": true,
-      "logicalAssignment": true,
-      "pipelineOperator": true,
-      "throwExpression": true,
-      "functionBind": true,
-      "functionSent": true,
-      "bigInt": true,
-      "importMeta": true,
-      "classPrivateProperties": true,
-      "classPrivateMethods": true,
-      "objectRestSpread": true,
-      "dynamicImport": true,
-      "jsx": {
-        "runtime": "automatic",
-        "importSource": "react"
-      }
+      "legacyDecorator": true,
+      "decoratorMetadata": true
     }
+  },
+  "output": {
+    "format": "cjs",
+    "minify": true,
+    "outdir": "dist",
+    "sourcemap": true
   }
 }
