@@ -6,6 +6,7 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "postbuild": "tsc --emitDeclarationOnly",
     "build": "gulp",
     "test": "jest",
     "release": "release-it"
