@@ -1,4 +1,4 @@
-const { CraEnvs } = require('../dist/index.cjs');
+const { CraEnvs } = require('../src');
 
 describe('test cra-envs', () => {
   test('cra-envs: get all', function () {
