@@ -2,9 +2,9 @@
   "name": "@<%= scope %>/<%= project_name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "gulp",
     "test": "jest",
@@ -41,11 +41,14 @@
   "homepage": "https://js.work",
   "babel": {
     "presets": [
-      ["@babel/preset-env", {
-        "targets": {
-          "node": "current"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
         }
-      }],
+      ],
       "@babel/preset-typescript"
     ]
   }
