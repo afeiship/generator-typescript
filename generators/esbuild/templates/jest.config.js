@@ -1,6 +1,9 @@
 // https://jestjs.io/docs/en/configuration
 module.exports = {
   verbose: true,
-  testRegex: [/\.spec.js/],
-  automock: false
+  testRegex: [/\.spec.ts/],
+  //preset: "jest-puppeteer",
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1'
+  }
 };
