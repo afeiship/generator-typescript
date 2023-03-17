@@ -11,5 +11,8 @@
     "skipDefaultLibCheck": true,
     "moduleResolution": "node",
     "noImplicitAny": false
-  }
+  },
+  "include": [
+    "src"
+  ]
 }
