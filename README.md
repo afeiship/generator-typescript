@@ -1,7 +1,6 @@
 # generator-typescript
 > Yeoman generator from typescript-package.
 
-
 ## generators
 ```shell
 # typescript package
