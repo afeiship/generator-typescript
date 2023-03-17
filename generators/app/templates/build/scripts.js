@@ -25,4 +25,12 @@ gulp.task('scripts:esm', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('scripts', gulp.series(['scripts:cjs', 'scripts:esm']));
+gulp.task('scripts:typing', function () {
+  return gulp
+    .src('src/**/*.ts')
+    .pipe($.jswork.pkgHeader())
+    .pipe($.typescript({ ...opts, declaration: true }))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('scripts', gulp.series(['scripts:cjs', 'scripts:esm', 'scripts:typing']));
