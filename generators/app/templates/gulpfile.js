@@ -1,11 +1,9 @@
-'use strict';
-
 const gulp = require('gulp');
-const fs = require('fs');
+const { CleanRegistry, TsScripts } = require('@jswork/gulp-registry');
 
-//import
-fs.readdirSync('./build').map(function(file) {
-  require('./build/' + file);
-});
+const task1 = new CleanRegistry();
+const task2 = new TsScripts();
 
-gulp.task('default', gulp.series(['clean', 'scripts']));
+[task1, task2].forEach(gulp.registry);
+
+gulp.task('default', gulp.series(['clean', 'ts:scripts']));
