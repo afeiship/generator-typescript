@@ -1,9 +1,10 @@
-const <%- ctx.classfiy(project_name)%> = (): void => {
+const <%- ctx.classify(String(project_name)) %> = (): void => {
   console.log('hello');
 };
 
-// for es6 import
-export default <%- ctx.classfiy(project_name)%>;
-
 // for commonjs es5 require
-module.exports = <%- ctx.classfiy(project_name)%>;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = <%- ctx.classify(String(project_name)) %>;
+}
+
+export default <%- ctx.classify(String(project_name)) %>;
