@@ -1,5 +1,7 @@
-import fs from "fs";
-import path from "path";
+#!/usr/bin/env node
+
+import fs from 'fs';
+import path from 'path';
 
 const tpls = path.join(__dirname, 'tpls');
 const files = ['dummy.txt'];
