@@ -12,6 +12,6 @@
   });
 
   gulp.task('scripts:tpls', function () {
-    return gulp.src('src/tpls/*').pipe(gulp.dest('dist/tpls'));
+    return gulp.src('src/tpls/**', { dot: true }).pipe(gulp.dest('dist/tpls'));
   });
 })();
