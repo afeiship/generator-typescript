@@ -3,7 +3,7 @@ const <%- ctx.classify(String(project_name)) %> = (): void => {
 };
 
 // for commonjs es5 require
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
   module.exports = <%- ctx.classify(String(project_name)) %>;
 }
 
