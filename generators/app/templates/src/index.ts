@@ -1,3 +1,5 @@
+declare var wx: any;
+
 const <%- ctx.classify(String(project_name)) %> = (): void => {
   console.log('hello');
 };
