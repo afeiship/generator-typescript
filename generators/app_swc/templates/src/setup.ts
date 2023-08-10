@@ -1,7 +1,9 @@
 import '@/types';
 import argsParser from 'args-parser';
 import '@jswork/next-require';
+import '@jswork/protofill';
 import 'log-timestamp';
+
 
 // process
 process.env.TZ = 'Asia/Shanghai';
