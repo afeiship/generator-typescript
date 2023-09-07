@@ -28,7 +28,7 @@ Code released under [the MIT license](https://github.com/afeiship/<%= project_na
 [license-url]: https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt
 
 [size-image]: https://img.shields.io/bundlephobia/minzip/@<%= scope %>/<%= project_name %>
-[size-url]: https://github.com/afeiship/<%= project_name %>/blob/master/dist/<%= project_name %>.min.js
+[size-url]: https://github.com/afeiship/<%= project_name %>/blob/master/dist/index.min.js
 
 [download-image]: https://img.shields.io/npm/dm/@<%= scope %>/<%= project_name %>
 [download-url]: https://www.npmjs.com/package/@<%= scope %>/<%= project_name %>
