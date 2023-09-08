@@ -6,4 +6,4 @@ const task2 = new TsScripts();
 
 [task1, task2].forEach(gulp.registry);
 
-gulp.task('default', gulp.series(['clean', 'ts:scripts']));
+gulp.task('default', gulp.series(['clean', 'ts:scripts', 'ts:scripts:umd']));
