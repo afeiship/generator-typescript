@@ -3,8 +3,11 @@
 
 ## generators
 ```shell
-# typescript package
+# new tsup
 yo @jswork/typescript
+
+# old typescript package
+yo @jswork/typescript:tsgulp
 
 # typescript app
 yo @jswork/typescript:app_tsnode
