@@ -21,11 +21,10 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const year = new Date().getFullYear();
     this.fs.copyTpl(
       globby.sync(this.templatePath("**"), { dot: true }),
       this.destinationPath(),
-      { ...this.props, year, ctx: yoHelper.ctx }
+      { ...this.props, ctx: yoHelper.ctx }
     );
   }
 };
