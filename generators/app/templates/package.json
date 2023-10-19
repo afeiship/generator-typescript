@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.esm.js",
   "browser": "dist/index.global.js",
   "typings": "dist/index.d.ts",
   "scripts": {
