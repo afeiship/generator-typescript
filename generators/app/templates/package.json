@@ -2,9 +2,8 @@
   "name": "@<%= scope %>/<%= project_name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "browser": "dist/index.global.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",

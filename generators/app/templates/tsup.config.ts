@@ -3,6 +3,8 @@ import { defineConfig } from 'tsup';
 export default defineConfig({
   entry: ['src/*.ts'],
   format: ['cjs', 'esm' /*'iife' */],
+  splitting: true,
+  cjsInterop: true,
   // globalName: 'i18nHelper',
   // external: ['react'],
   dts: true,
@@ -11,5 +13,5 @@ export default defineConfig({
     return {
       js: `.${format}.js`,
     };
-  },
+  }
 });
