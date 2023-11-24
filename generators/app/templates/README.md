@@ -18,6 +18,11 @@ import <%- ctx.camelize(String(project_name)) %> from '@<%= scope %>/<%= project
 // usage goes here.
 ```
 
+## types
+```ts
+/// <reference types="@<%= scope %>/<%= project_name %>/global.d.ts" />
+```
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt).
 
