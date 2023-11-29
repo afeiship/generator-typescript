@@ -21,9 +21,8 @@
     "typescript": "^4.9.5"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "<%= registry.access %>",
+    "registry": "<%= registry.publish %>"
   },
-  "homepage": "https://js.work",
   "dependencies": {}
 }
