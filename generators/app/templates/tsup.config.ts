@@ -7,11 +7,13 @@ export default defineConfig({
   cjsInterop: true,
   // globalName: 'i18nHelper',
   // external: ['react'],
-  dts: true,
+  clean: true,
+  // dts: true,
   sourcemap: true,
+  onSuccess: 'tsc --project tsconfig.json --emitDeclarationOnly --declaration --outDir dist',
   outExtension({ format }) {
     return {
       js: `.${format}.js`,
     };
-  }
+  },
 });
