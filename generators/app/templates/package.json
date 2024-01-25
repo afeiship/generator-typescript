@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "build:umd":"rollup -c rollup.config.js",
+    "postbuild":"rollup -c rollup.config.js",
     "test": "jest",
     "release": "release-it"
   },
