@@ -1,5 +1,5 @@
 // https://jestjs.io/docs/en/configuration
-module.exports = {
+export default {
   verbose: true,
   // use jsdom env
   // testEnvironment: 'jsdom',
