@@ -2,6 +2,7 @@ import fn from '../src';
 
 describe('api.basic', () => {
   test('Noraml single value case', () => {
-    expect(fn({ rel: true })).toBe(undefined);
+    const res = fn(1,2)
+    expect(res).toBe(3);
   });
 });

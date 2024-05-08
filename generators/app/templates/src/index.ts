@@ -1,5 +1,5 @@
-const <%- ctx.camelize(String(project_name)) %> = (): void => {
-  console.log('hello');
+const sum = (a: number, b: number): number => {
+  return a + b;
 };
 
-export default <%- ctx.camelize(String(project_name)) %>;
+export default sum;
